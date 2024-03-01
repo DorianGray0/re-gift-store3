@@ -119,6 +119,8 @@ button {
   padding-bottom: 39px;
 
   color: var(--btn-bgc);
+
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .header-nav-logo:hover,
@@ -142,6 +144,8 @@ button {
   padding-bottom: 47px;
 
   font-size: 18px;
+
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .nav-item-link:hover,
@@ -158,6 +162,9 @@ button {
   border: 1px solid var(--color-accent);
   border-radius: 5px;
   background-color: transparent;
+
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .header-nav-btn:hover,
@@ -209,6 +216,8 @@ button {
   border-radius: 5px;
   border: none;
   background-color: var(--color-accent);
+
+  transition: box-shadow 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .hero-btn:hover,
@@ -255,12 +264,17 @@ button {
 
   border: 1px solid #f7941e;
   border-radius: 5px;
+
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .about-link:hover,
 .about-link:focus {
   color: var(--secondary-text-color);
   background-color: var(--color-accent);
+  transform: scale(1.1);
 }
 
 /* ----------------------------SERVICES----- */
@@ -313,8 +327,17 @@ button {
 }
 
 .services-item-link {
+  display: inline-block;
   font-size: 14px;
   line-height: 1.35;
+
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform-origin: left;
+}
+
+.services-item-link:hover,
+.services-item-link:focus {
+  transform: scale(1.1);
 }
 
 /* ---------------------SIGN UP ----------- */
@@ -356,6 +379,8 @@ button {
   background-color: transparent;
   border: 1px solid #000;
   border-radius: 5px;
+
+  transition: box-shadow 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .sign-btn.color {
@@ -423,9 +448,18 @@ button {
 }
 
 .blogs-article-link {
+  display: inline-block;
+
   font-size: 18px;
   line-height: var(--regular-lh);
   color: var(--secondary-text-color);
+
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.blogs-article-link:hover,
+.blogs-article-link:focus {
+  transform: scale(1.1);
 }
 
 /* .blogs-article-link:hover,
@@ -472,6 +506,13 @@ button {
 }
 
 .suggestion-link {
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform-origin: left;
+}
+
+.suggestion-link:hover,
+.suggestion-link:focus {
+  transform: scale(1.1);
 }
 
 /* ------------------FOOTER------------ */
@@ -505,6 +546,8 @@ button {
   padding-bottom: 43px;
 
   color: var(--color-accent);
+
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .footer-nav-logo:hover,
@@ -517,6 +560,8 @@ button {
   padding-bottom: 43px;
 
   font-weight: 700;
+
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .footer-nav-link:hover,
